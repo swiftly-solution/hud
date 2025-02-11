@@ -43,7 +43,6 @@ local function OnPluginStart(event)
             font = panel.font or "Arial",
             background = panel.background or false,
         })
-        currentIndex[i] = 1
     end
 end
 
@@ -107,7 +106,6 @@ end
     local playerid = event:GetInt("userid")
     local oldTeam = event:GetInt("oldteam")
 
-    print(oldTeam)
 
     if oldTeam ~= Team.None then
         return
