@@ -1,0 +1,18 @@
+{
+    "interval": 5000,
+    "panels": [
+        {
+            "available_placeholders": [
+                "{playerName}",
+                "{map}",
+                "{maxplayers}",
+                "{players}"
+            ],
+            "messages": ["Welcome, {playerName}!", "Current map: {map}", "Players online: {players}"],
+            "color": { "r": 255, "g": 200, "b": 0, "a": 150 },
+            "position": { "x": 0.5, "y": 0.5 },
+            "font": "Sans Serif",
+            "background": true
+        }
+    ]
+}
