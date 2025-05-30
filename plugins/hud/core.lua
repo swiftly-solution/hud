@@ -20,6 +20,7 @@ local function ReplacePlaceholders(text, playerid)
     local player = GetPlayer(playerid)
     if not player then return text end
 
+    if not player:CBasePlayerController():IsValid() then return end
     text = text:gsub("{playerName}", player:CBasePlayerController().PlayerName)
     text = text:gsub("{players}", tostring(playermanager:GetPlayerCount()))
     text = text:gsub("{maxplayers}", tostring(server:GetMaxPlayers()))
